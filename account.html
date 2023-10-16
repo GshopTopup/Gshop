@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Customer ID</title>
+  <style>
+  h3{
+    font-size: 4rem;
+    color: green;
+  }
+  p{
+    font-size: 3rem;
+  }
+ .order{
+   text-align: center;
+   color: green;
+ }
+ .orbox{
+   border: 2px solid blue;
+   color: black;
+ }
+  a{
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  button{
+    height: 100px;
+    width: 250px;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    background-color: green;
+    border-radius: 10px;
+  }
+  </style>
+</head>
+<body>
+    <h3>Welcome to Gshop</h3>
+    <p>Your Customer ID: <span id="customerID"></span></p>
+  <hr>
+  <div class="order">
+    <p>Your Orders</p>
+    <div class="orbox">
+      <p><a href="index.html">+</a>You haven't ordered anything yet</p>
+        <a href="index.html"><button>Order Now</button></a>
+    </div>
+  </div>
+  
+
+    <script>
+        // Check if the customer ID is already stored in localStorage
+        let customerID = localStorage.getItem('customerID');
+
+        // If it doesn't exist, generate a random ID and store it
+        if (!customerID) {
+            customerID = generateRandomID();
+            localStorage.setItem('customerID', customerID);
+        }
+
+        // Display the customer ID on the web page
+        document.getElementById('customerID').textContent = customerID;
+
+        // Function to generate a random customer ID
+        function generateRandomID() {
+            // You can use any desired method to generate a unique ID, like a UUID library
+            // For simplicity, we'll use a random 6-digit number
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+    </script>
+</body>
+</html>

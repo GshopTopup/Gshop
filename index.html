@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Main</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img id="glogo" src="https://t4.ftcdn.net/jpg/05/12/91/97/360_F_512919754_4D2yruVH1rdPgwV2fnLY9zsDS8mKmzRQ.jpg" alt="Gshop Logo"> 
+      <p id="logp">shop</p>
+      <button id="acb">My Account</button>
+    </div>
+    <hr color="black">
+  </header>
+  <main>
+    <div class="slideshow-container">
+    <img class="mySlides" src="https://i.dawn.com/primary/2022/03/623c0d699d3de.png" alt="Slide freefire"> >
+    <img class="mySlides" src="https://wallpapers.com/images/hd/pubg-pictures-o3eqzdeil2265vdj.jpg" alt="Slide Pubg">
+  </div>
+    <div class="line">
+      <hr><p>Favourit Games</p><hr>
+    </div>
+  <div class="slct">
+    <div class="games">
+      <a href="freefire.html">
+        <img id="free" src="https://play-lh.googleusercontent.com/WB8RnTB4cFReVlSIifGZrkBGzsAE1V00zzidaN301VA3LSBSfjvclrSCzvvMYOjkPmVd" alt="FreeFire">
+        <p class="namep">Free Fire <br>Topup</p>
+      </a>
+    </div>
+    <div class="games">
+      <a href="Pubg.html">
+        <img id="pub" src="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.tencent.ig.jpg" alt="Image Description"> 
+        <p class="namep">PUBG Mobile <br>Topup</p>
+      </a>
+    </div>
+  </div>
+  </main>
+  <div class="connect">
+    <h1>Stay Connected</h1>
+    <p>House #12 (3rd Floor) Road # 3, Mirpur-14 Dhaka</p>
+  </div>
+  <footer>
+    &copy; 2023 Gshop. All rights reserved. | Designed by <a href="">Team Plastic- @PlasticBoy007 / Telegram</a>
+  </footer>
+  <script>
+    // Get a reference to the "My Account" button
+    const myAccountButton = document.getElementById("acb");
+
+    // Add a click event listener to the button
+    myAccountButton.addEventListener("click", function() {
+      // Redirect to another page when the button is clicked
+      window.location.href = "account.html"; // Replace with the actual URL of the My Account page
+    });
+  let slideIndex = 0;
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName("mySlides");
+  
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  // Display the next slide
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+
+  // Change slide every 2 seconds (2000 milliseconds)
+  setTimeout(showSlides, 2000);
+}
+
+// Start the slideshow
+showSlides();
+  </script>
+</body>
+</html>
