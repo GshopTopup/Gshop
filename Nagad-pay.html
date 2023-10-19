@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Nagad Payment</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ .im{
+   text-align: center;
+ }
+  .rules{
+   border: 2px solid cornflowerblue;
+   margin-top: 50px;
+   margin-right: 50px;
+   margin-left: 50px;
+   border-radius: 10px;
+ }
+  #rl{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+  }
+ .rules ul{
+    margin-left: 50px;
+ }
+ .rlb{
+   text-align: center;
+ }
+ .rlb button{
+   height: 100px;
+   width: 350px;
+   font-size: 3rem;
+   background-color: red;
+   border-radius: 10px;
+   margin-top : 50px;
+   margin-bottom: 200px;
+ }
+  </style>
+</head>
+<body>
+  <div class="im">
+    <img id="nagad" src="https://www.himublog.com/wp-content/uploads/2021/06/nagad.jpg" alt="Nagad Image" class="large-image">
+  </div>
+  <div class="pay">
+            <p id="tran">ট্রান্সজেকশন আইডি দিন</p>
+          <input id="re2" type="text" placeholder="ট্রান্সজেকশন আইডি দিন" required>
+          <div class="list">
+            <ul>
+            <li>*167# ডায়াল করে আপনার NAGAD মোবাইল মেনুতে যান অথবা NAGAD অ্যাপে যান।</li>
+            <li>"Send Money" -এ ক্লিক করুন।</li>
+              <li>প্রাপক নম্বর হিসেবে এই নম্বরটি লিখুনঃ 01743581539</li>
+              <li>নির্দিষ্ট পরিমানের টাকা সেন্ডমানি করুন।</li>
+              <li>নিশ্চিত করতে এখন আপনার NAGAD মোবাইল মেনু পিন লিখুন।</li>
+              <li>সবকিছু ঠিক থাকলে, আপনি NAGAD থেকে একটি নিশ্চিতকরণ বার্তা পাবেন।</li>
+              <li id="lasli">এখন উপরের বক্সে আপনার Transaction ID দিন এবং নিচের VERIFY বাটনে ক্লিক করুন।</li>
+          </ul>
+          </div>
+          </div>
+        <div class="bt">
+          <b><button id="vy">VERIFY</button></b>
+        </div>
+  </div>
+  <div class="rules">
+    <p id="rl">#Rules & Conditions</p>
+    <ul>
+      <li>
+        Order করার ৫ মিনিটের মধ্যে Diamond / UC পেয়ে যাবেন।
+      </li>
+      <li>
+        Player ID Code ভুল দিয়ে Diamond / UC না পেলে G shop কর্তৃপক্ষ দায়ী নয়।
+      </li>
+      <li>
+        Order কমপ্লিট হওয়ার পরেও আইডিতে Diamond / UC না গেলে Support মেসেজ দিন।
+      </li>
+    </ul>
+  </div>
+  <div class="rlb">
+    <a href="https://wa.me/+8801891707400"><button>Support</button></a>
+  </div>
+<script>
+  document.getElementById('vy').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Check if the transaction ID input is filled
+    var transactionIdInput = document.getElementById('re2');
+    if (transactionIdInput.value.trim() === '') {
+      alert('Transaction ID is required.');
+      return;
+    }
+
+    // Proceed to the next step if the input is filled
+    window.location.href = 'thank.html';
+  });
+</script>
+
+</body>
+</html>
