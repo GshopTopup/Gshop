@@ -98,6 +98,7 @@ hr{
 #nagad{
   width: 300px;
   height: auto;
+  margin-bottom: 30px;
 }
 #re2{
   height: 100px;
@@ -156,6 +157,7 @@ input[type="radio"] {
   height: 70px;
   margin-top: 15px;
   margin-left: 10px;
+  border: 2px solid black;
 }
 input::placeholder {
   font-size: 2rem;
@@ -223,4 +225,32 @@ a:hover {
 #dlogo{
   width: 980px;
   height: 300px;
+}
+#bkash{
+  width: 300px;
+  height: auto;
+}
+#method{
+  font-size: 3rem;
+}
+#n{
+  margin-bottom: 100px;
+}
+#b{
+  margin-bottom: 20px;
+}
+.log2{
+  display: flex;
+}
+#continue{
+  height: 100px;
+  width: 550px;
+  justify-content: center;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  border: 1px solid palegreen;
+  margin-bottom: 150px;
+  font-size: 3rem;
+  margin-top: 25px;
 }
