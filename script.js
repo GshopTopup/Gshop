@@ -1,5 +1,14 @@
+document.getElementById('rec').style.display = 'none';
+document.getElementById('uid').style.display = 'none';
+document.getElementById('pmnt').style.display = 'none';
+
 document.getElementById('continue').addEventListener('click', function(event) {
     event.preventDefault();
+
+    // Hide all the <p> tags under the 'alt' div
+    document.getElementById('rec').style.display = 'none';
+    document.getElementById('uid').style.display = 'none';
+    document.getElementById('pmnt').style.display = 'none';
 
     // Check if an amount option is selected in the 'amount' section
     var amountInputs = document.querySelectorAll('input[name="amount"]');
@@ -26,17 +35,15 @@ document.getElementById('continue').addEventListener('click', function(event) {
     // Check if the player ID (UID) is filled
     var playerIdInput = document.getElementById('in');
     if (playerIdInput.value.trim() === '') {
-      alert('Player ID (UID) is not filled.');
+      document.getElementById('uid').style.display = 'block';
       return;
     }
 
     // Display different alerts based on the section that is not selected
-    if (!amountSelected && !paymentSelected) {
-      alert('Please select all options.');
-    } else if (!amountSelected) {
-      alert('Select a recharge.');
+    if (!amountSelected) {
+      document.getElementById('rec').style.display = 'block';
     } else if (!paymentSelected) {
-      alert('Select Bkash or Nagad');
+      document.getElementById('pmnt').style.display = 'block';
     } else {
       // Proceed to the next step if both conditions are met
       if (selectedPaymentValue === 'bk') {
