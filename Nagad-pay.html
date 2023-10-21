@@ -35,9 +35,27 @@
    margin-top : 50px;
    margin-bottom: 200px;
  }
-ul li {
+  ul li {
   font-size: 45px; /* Change this value to set the desired font size */
- } 
+}
+  li a{
+  color: gold;
+}
+  #copyButton{
+    height: 50px;
+    width: 150px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+    background-color: gray;
+  }
+  .alt p{
+   font-size: 3rem;
+   color: red;
+ }
+ #cod{
+   display: none;
+ }
   </style>
 </head>
 <body>
@@ -50,8 +68,8 @@ ul li {
           <div class="list">
             <ul>
             <li>*167# ডায়াল করে আপনার NAGAD মোবাইল মেনুতে যান অথবা NAGAD অ্যাপে যান।</li>
-            <li>"Send Money" -এ ক্লিক করুন।</li>
-              <li>প্রাপক নম্বর হিসেবে এই নম্বরটি লিখুনঃ 01743581539</li>
+            <li><a class="clr">"Send Money"</a> -এ ক্লিক করুন।</li>
+              <li>প্রাপক নম্বর হিসেবে এই নম্বরটি লিখুনঃ <a class="clr">01743581539</a> <button id="copyButton">Copy</button></li>
               <li>নির্দিষ্ট পরিমানের টাকা সেন্ডমানি করুন।</li>
               <li>নিশ্চিত করতে এখন আপনার NAGAD মোবাইল মেনু পিন লিখুন।</li>
               <li>সবকিছু ঠিক থাকলে, আপনি NAGAD থেকে একটি নিশ্চিতকরণ বার্তা পাবেন।</li>
@@ -60,6 +78,9 @@ ul li {
           </div>
           </div>
         <div class="bt">
+          <div class="alt">
+            <p id="cod">Transaction ID required</p>
+          </div>
           <b><button id="vy">VERIFY</button></b>
         </div>
   </div>
@@ -86,14 +107,42 @@ ul li {
 
     // Check if the transaction ID input is filled
     var transactionIdInput = document.getElementById('re2');
+    var codElement = document.getElementById('cod');
+    
     if (transactionIdInput.value.trim() === '') {
-      alert('Transaction ID is required.');
-      return;
+      // Display the 'p' tag with the 'cod' id
+      codElement.style.display = 'block';
+    } else {
+      // Hide the 'p' tag with the 'cod' id
+      codElement.style.display = 'none';
+      // Proceed to the new page if the input is filled
+      window.location.href = 'thank.html';
     }
-
-    // Proceed to the next step if the input is filled
-    window.location.href = 'thank.html';
   });
+  // Get the button element
+    var copyButton = document.getElementById('copyButton');
+
+    // Add a click event listener to the button
+    copyButton.addEventListener('click', function() {
+      // Create a temporary input element
+      var tempInput = document.createElement('input');
+      
+      // Set the input value to the phone number
+      tempInput.value = '01743581539';
+
+      // Append the input element to the body (you can hide it with CSS)
+      document.body.appendChild(tempInput);
+
+      // Select the input text
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the selected text to the clipboard
+      document.execCommand('copy');
+
+      // Remove the temporary input element
+      document.body.removeChild(tempInput);
+    });
 </script>
 
 </body>
