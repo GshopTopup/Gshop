@@ -140,3 +140,13 @@ button:hover{
   width: 100%;
   height: 500px;
 }
+.centeredr img{
+  width: 600px;
+  margin-left: 200px;
+  margin-top: 75px;
+  border: 5px solid black;
+}
+#mem{
+  margin-left: 400px;
+  font-size: 3rem;
+}
