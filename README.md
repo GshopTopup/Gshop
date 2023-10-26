@@ -1,1 +1,1 @@
-#ff#Free Fire#Topup#Diamond#price# Gshop
+# Gshop
