@@ -150,3 +150,34 @@ button:hover{
   margin-left: 400px;
   font-size: 3rem;
 }
+.support2{
+    position: fixed;
+    bottom: 100px; /* Adjust this value to change the distance from the bottom */
+    right: 100px; /* Adjust this value to change the distance from the right */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+#whats{
+  color: forestgreen;
+  margin-top: 13px;
+  font-size: 9rem;
+}
+#sp{
+  color: black;
+  font-size: 3rem;
+  margin-right: 30px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: red;
+  border-radius: 10px;
+  margin-top: 50px;
+  height: 60px;
+  font-weight: bold;
+}
+/* Style other content on the page to ensure the button doesn't overlap */
+/* Add any necessary styling for your webpage content */
