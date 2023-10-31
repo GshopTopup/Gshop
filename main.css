@@ -54,6 +54,7 @@
 }
 .games a img{
   height: 400px;
+  width: 400px;
   border: 2px solid black;
   margin-top: 70px;
 }
