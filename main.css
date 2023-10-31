@@ -55,13 +55,14 @@
 .games a img{
   height: 400px;
   border: 2px solid black;
+  margin-top: 70px;
 }
 #pub{
   width: 400px;
 }
 .namep{
   font-size: 3rem;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 a{
   text-decoration: none;
@@ -150,6 +151,7 @@ button:hover{
   margin-left: 400px;
   font-size: 3rem;
 }
+/* Style the support button */
 .support2{
     position: fixed;
     bottom: 100px; /* Adjust this value to change the distance from the bottom */
