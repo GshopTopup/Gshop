@@ -17,9 +17,8 @@
     </header>  
     <main>  
       <div class="slideshow-container">  
-      <img class="mySlides" src="https://i.dawn.com/primary/2022/03/623c0d699d3de.png" alt="Slide freefire"> >  
-      <img class="mySlides" src="https://wallpapers.com/images/hd/pubg-pictures-o3eqzdeil2265vdj.jpg" alt="Slide Pubg">  
-    </div>  
+      <img src="https://drive.google.com/uc?id=1FxNtjuitu7REL8KNFTPyK0CuQIEVTfxL" alt="Description of the image">
+     </div>  
       <div class="line">  
         <hr><p>Favourit Games</p><hr>  
       </div>  
@@ -84,34 +83,34 @@
     <script>  
       // Get a reference to the "My Account" button  
       const myAccountButton = document.getElementById("acb");  
-  
+
       // Add a click event listener to the button  
       myAccountButton.addEventListener("click", function() {  
         // Redirect to another page when the button is clicked  
         window.location.href = "account.html"; // Replace with the actual URL of the My Account page  
       });  
     let slideIndex = 0;  
-  
+
   function showSlides() {  
     let i;  
     const slides = document.getElementsByClassName("mySlides");  
-  
+
     // Hide all slides  
     for (i = 0; i < slides.length; i++) {  
       slides[i].style.display = "none";  
     }  
-  
+
     // Display the next slide  
     slideIndex++;  
     if (slideIndex > slides.length) {  
       slideIndex = 1;  
     }  
     slides[slideIndex - 1].style.display = "block";  
-  
+
     // Change slide every 2 seconds (2000 milliseconds)  
     setTimeout(showSlides, 2000);  
   }  
-  
+
   // Start the slideshow  
   showSlides();  
     </script>  
