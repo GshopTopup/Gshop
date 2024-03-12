@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Account</title>
+    <title>My Orders</title>
   <style>
-  h3{
+ #no p{
+   text-align: center;
+ }
+  p{
+  display: flex;
+}
+#cen{
+  text-align: center;
+}
+.order{
+  text-align: center;
+}
+h3{
     font-size: 4rem;
     color: green;
   }
@@ -29,22 +41,44 @@
     margin-bottom: 25px;
     background-color: green;
     border-radius: 10px;
+    margin-top: 50px;
   }
+h1{
+  font-size: 3.5rem;
+  margin-left: 15px;
+}
+#yo{
+  text-decoration: underline;
+}
+pre{
+  font-size: 2.5rem;
+  margin-left: 15px;
+  font-weight: bold;
+}
+#com{
+  color: deeppink;
+}
   </style>
 </head>
 <body>
-    <h3>Welcome to Gshop</h3>
+  <div id="cen"><h3>আপনার অর্ডারগুলো এখানে দেখতে পাবেন।</h3></div>
     <p>Your Customer ID: <span id="customerID"></span></p>
   <hr>
   <div class="order">
-    <p>Your Orders</p>
-    <div class="orbox">
-      <p><a href="index.html">+</a>You haven't ordered anything yet</p>
-        <a href="index.html"><button>Order Now</button></a>
-    </div>
+    <p id="yo">Your Orders:</p>
   </div>
-  
-
+  <!-- <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : </pre>
+    <pre>Date       : </pre>
+    <pre>Package    : </pre>
+    <Pre>Player Id  : </Pre>
+    <pre>Status     : <span id="com">Complete</span></pre>
+    </div> -->
+  <div id="no"><p> # আপনি এখনো কিছু অর্ডার করেননি</p></div>
+      <div class="order">
+        <a href="index.html"><button>Home</button></a>
+      </div>
     <script>
         // Check if the customer ID is already stored in localStorage
         let customerID = localStorage.getItem('customerID');
