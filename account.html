@@ -1,167 +1,117 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-    <title>My Orders</title>
+  <meta charset="utf-8">
+  <title>My Orders</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
- #no p{
-   text-align: center;
- }
-  p{
-  display: flex;
-}
-#cen{
-  text-align: center;
-}
-.order{
-  text-align: center;
-}
-h3{
-    font-size: 4rem;
-    color: green;
-  }
-  p{
-    font-size: 3rem;
-  }
- .order{
-   text-align: center;
-   color: green;
- }
- .orbox{
-   border: 2px solid blue;
-   color: black;
-   margin-bottom: 50px;
- }
-  a{
-    text-decoration: none;
-    font-size: 3rem;
-  }
-  button{
-    height: 100px;
-    width: 250px;
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-    background-color: green;
-    border-radius: 10px;
-    margin-top: 50px;
-  }
-h1{
-  font-size: 3.5rem;
-  margin-left: 15px;
-}
-#yo{
-  text-decoration: underline;
-}
-pre{
-  font-size: 2.5rem;
-  margin-left: 15px;
+    .fbody {
+      border: 1px solid rgb(87, 62, 62);
+      margin-right: 70px;
+      margin-left: 70px;
+      margin-top: 100px;
+    }
+
+    .logc {
+      display: flex;
+      border: 1px solid rgb(87, 62, 62);
+      padding: 15px;
+    }
+
+    i {
+      color: palegreen;
+      font-size: 7rem;
+    }
+
+    #ip {
+      font-size: 5rem;
+      margin-bottom: 7px;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .orderb {
+      background-color: rgb(200, 234, 200);
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      /* Change flex direction to column */
+      align-items: center;
+      /* Center items horizontally */
+      padding: 30px;
+      font-size: 3rem;
+    }
+
+    #orn {
+      border-radius: 20px;
+      border-color: rgb(225, 68, 24);
+      background-color: rgb(176, 243, 42);
+    }
+
+    .amt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+    }
+
+    .amtf {
+      font-weight: bold;
+    }
+
+    .amts {
+      margin-left: 5px;
+    }
+    .btgrp{
+      display: flex;
+      margin-top: 650px;
+      margin-bottom: 10px;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: rgb(180, 178, 181);
+      padding: 50px;
+      
+    }
+.botbt{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(250, 18, 18);
+  border: 1px;
   font-weight: bold;
-}
-#com{
-  color: deeppink;
+  font-size: 3rem;
 }
   </style>
 </head>
+
 <body>
-  <div id="cen"><h3>আপনার অর্ডারগুলো এখানে দেখতে পাবেন।</h3></div>
-    <p>Your Customer ID: <span id="customerID"></span></p>
-  <hr>
-  <div class="order">
-    <p id="yo">Your Orders:</p>
+  <div class="fbody">
+    <div class="logc">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <p id="ip">My Orders</p>
+      <hr color="rgb(87, 62, 62)">
+    </div>
+    <div class="orderb">
+      <p>No Order Data Found !</p>
+      <a href="index.html"><button id="orn">Order Now</button></a>
+    </div>
+    <hr color="rgb(87, 62, 62)">
+    <div class="amt">
+      <p class="amtf">Total : </p>
+      <p class="amts"> ৳ 0.00</p>
+    </div>
   </div>
-  <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 899645</pre>
-    <pre>Date       : 31-8-24    12:17 pm</pre>
-    <pre>Package    : Monthly Pass</pre>
-    <pre>Price      : 680 BDT</pre>
-    <Pre>Player Id  : 6428690107</Pre>
-    <pre>Status     : <span id="com">Complete</span> (31-8-24 12:20am)</pre>
-    </div>
-  <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 898500</pre>
-    <pre>Date       : 22-6-24    8:21 am</pre>
-    <pre>Package    : 115 Diamond</pre>
-    <pre>Price      : 69 BDT</pre>
-    <Pre>Player Id  : 6428690107</Pre>
-    <pre>Status     : <span id="com">Complete</span> (22-6-24 8:22am)</pre>
-    </div>
-  <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 890274</pre>
-    <pre>Date       : 2-6-24    9:13 pm</pre>
-    <pre>Package    : Monthly Pass</pre>
-    <pre>Price      : 670 BDT</pre>
-    <Pre>Player Id  : 4916857339</Pre>
-    <pre>Status     : <span id="com">Complete</span> (2-6-24 9:15pm)</pre>
-    </div>
-  <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 886252</pre>
-    <pre>Date       : 1-5-24    6:18 pm</pre>
-    <pre>Package    : 505 Diamond</pre>
-    <pre>Price      : 305 BDT</pre>
-    <Pre>Player Id  : 6428690107</Pre>
-    <pre>Status     : <span id="com">Complete</span> (1-5-24 6:21pm)</pre>
-    </div>
-   <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 799108</pre>
-    <pre>Date       : 1-5-24    6:18 pm</pre>
-    <pre>Package    : 505 Diamond</pre>
-    <pre>Price      : 305 BDT</pre>
-    <Pre>Player Id  : 6428690107</Pre>
-    <pre>Status     : <span id="com">Complete</span> (1-5-24 6:21pm)</pre>
-    </div>
-   <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 770274</pre>
-    <pre>Date       : 12-3-24    10:50 pm</pre>
-    <pre>Package    : 610 Diamond</pre>
-    <pre>Price      : 360 BDT</pre>
-    <Pre>Player Id  : 4916857339</Pre>
-    <pre>Status     : <span id="com">Complete</span> (12-3-24 10:52pm)</pre>
-    </div>
-  <!--  <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 710946</pre>
-    <pre>Date       : 25-11-23    7:12 pm</pre>
-    <pre>Package    : Weekly Pass</pre>
-    <pre>Price      : </pre>
-    <Pre>Unipin     : </Pre>
-    <pre>Status     : <span id="com">Complete</span> (25-11-23 7:13pm)</pre>
-    </div> -->
-  <div class="container orbox">
-    <h1>My Order</h1><hr>
-    <pre>Order Id   : 609758</pre>
-    <pre>Date       : 25-11-23    7:12 pm</pre>
-    <pre>Package    : Monthly Pass</pre>
-    <pre>Price      : 650 BDT</pre>
-    <Pre>Player Id  : 5648036137</Pre>
-    <pre>Status     : <span id="com">Complete</span> (25-11-23 7:13pm)</pre>
-    </div>
-      <div class="order">
-        <a href="index.html"><button>অর্ডার করুন</button></a>
-      </div>
-    <script>
-        // Check if the customer ID is already stored in localStorage
-        let customerID = localStorage.getItem('customerID');
-
-        // If it doesn't exist, generate a random ID and store it
-        if (!customerID) {
-            customerID = generateRandomID();
-            localStorage.setItem('customerID', customerID);
-        }
-
-        // Display the customer ID on the web page
-        document.getElementById('customerID').textContent = customerID;
-
-        // Function to generate a random customer ID
-        function generateRandomID() {
-            // You can use any desired method to generate a unique ID, like a UUID library
-            // For simplicity, we'll use a random 6-digit number
-            return Math.floor(100000 + Math.random() * 900000).toString();
-        }
-    </script>
+  <div class="btgrp">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
