@@ -1,0 +1,176 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#glogo{
+  height: 150px;
+  width: auto;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.logo{
+  display: flex;
+  background-color: palegreen;
+}
+#logp{
+  margin-top: 75px;
+  margin-right: 15px;
+  font-size: 4rem;
+  font-weight: 800px;
+}
+#acb{
+  height: 100px;
+  width: 200px;
+  margin-left: 400px;
+  margin-top: 50px;
+  font-size: 2rem;
+  border-radius: 5px;
+  font-weight: 800px;
+}
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+}
+.mySlides {
+  display: none;
+  height: 400px;
+  width: 100%;
+}
+.line{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  color: green;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.slct{
+  display: flex;
+  justify-content: space-evenly;
+}
+.games img{
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  margin-top: 70px;
+}
+#pub{
+  width: 400px;
+}
+.namep{
+  font-size: 3rem;
+  margin-left: 70px;
+}
+a{
+  text-decoration: none;
+}
+footer {
+      background-color: #333; /* Background color for the footer */
+      color: #fff; /* Text color for the footer */
+      text-align: center;
+      padding: 10px; /* Add padding for better spacing */
+  font-size: 2rem;
+    }
+
+    /* Style for links in the footer */
+    footer a {
+      color: #fff; /* Link color in the footer */
+      text-decoration: none; /* Remove underlines from links */
+    }
+
+    /* Style for links on hover in the footer */
+    footer a:hover {
+      text-decoration: underline; /* Add underline on hover for links */
+    }
+.connect{
+  height: 400px;
+  width: 100%;
+  margin-top: 150px;
+  background-color: black;
+  color: whitesmoke;
+}
+.connect h1{
+  font-size: 4rem;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.connect p{
+  font-size: 2rem;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust the height as needed */
+  background-color: pink;
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+.centered-content {
+    text-align: center;
+  font-size: 2.5rem;
+  color: red;
+}
+.mid img{
+  height: 200px;
+}
+.support{
+  text-align: center;
+}
+button{
+  height: 100px;
+  width: 250px;
+  background-color: rebeccapurple;
+  border-radius: 15px;
+  font-size: 2rem;
+  margin-top: 50px;
+  color: whitesmoke;
+}
+button:hover{
+  border: 8px solid green;
+}
+.slideshow-container img{
+  width: 100%;
+  height: 500px;
+}
+/* Style the support button */
+.support2{
+    position: fixed;
+    bottom: 100px; /* Adjust this value to change the distance from the bottom */
+    right: 100px; /* Adjust this value to change the distance from the right */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+#whats{
+  color: forestgreen;
+  margin-top: 13px;
+  font-size: 9rem;
+}
+#sp{
+  color: black;
+  font-size: 3rem;
+  margin-right: 30px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: red;
+  border-radius: 10px;
+  margin-top: 50px;
+  height: 60px;
+  font-weight: bold;
+}
+/* Style other content on the page to ensure the button doesn't overlap */
+/* Add any necessary styling for your webpage content */

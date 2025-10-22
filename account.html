@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Orders</title>
+  <style>
+ #no p{
+   text-align: center;
+ }
+  p{
+  display: flex;
+}
+#cen{
+  text-align: center;
+}
+.order{
+  text-align: center;
+}
+h3{
+    font-size: 4rem;
+    color: green;
+  }
+  p{
+    font-size: 3rem;
+  }
+ .order{
+   text-align: center;
+   color: green;
+ }
+ .orbox{
+   border: 2px solid blue;
+   color: black;
+   margin-bottom: 50px;
+ }
+  a{
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  button{
+    height: 100px;
+    width: 250px;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+h1{
+  font-size: 3.5rem;
+  margin-left: 15px;
+}
+#yo{
+  text-decoration: underline;
+}
+pre{
+  font-size: 2.5rem;
+  margin-left: 15px;
+  font-weight: bold;
+}
+#com{
+  color: deeppink;
+}
+  </style>
+</head>
+<body>
+  <div id="cen"><h3>আপনার অর্ডারগুলো এখানে দেখতে পাবেন।</h3></div>
+    <p>Your Customer ID: <span id="customerID"></span></p>
+  <hr>
+  <div class="order">
+    <p id="yo">Your Orders:</p>
+  </div>
+  <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 899645</pre>
+    <pre>Date       : 31-8-24    12:17 pm</pre>
+    <pre>Package    : Monthly Pass</pre>
+    <pre>Price      : 680 BDT</pre>
+    <Pre>Player Id  : 6428690107</Pre>
+    <pre>Status     : <span id="com">Complete</span> (31-8-24 12:20am)</pre>
+    </div>
+  <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 898500</pre>
+    <pre>Date       : 22-6-24    8:21 am</pre>
+    <pre>Package    : 115 Diamond</pre>
+    <pre>Price      : 69 BDT</pre>
+    <Pre>Player Id  : 6428690107</Pre>
+    <pre>Status     : <span id="com">Complete</span> (22-6-24 8:22am)</pre>
+    </div>
+  <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 890274</pre>
+    <pre>Date       : 2-6-24    9:13 pm</pre>
+    <pre>Package    : Monthly Pass</pre>
+    <pre>Price      : 670 BDT</pre>
+    <Pre>Player Id  : 4916857339</Pre>
+    <pre>Status     : <span id="com">Complete</span> (2-6-24 9:15pm)</pre>
+    </div>
+  <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 886252</pre>
+    <pre>Date       : 1-5-24    6:18 pm</pre>
+    <pre>Package    : 505 Diamond</pre>
+    <pre>Price      : 305 BDT</pre>
+    <Pre>Player Id  : 6428690107</Pre>
+    <pre>Status     : <span id="com">Complete</span> (1-5-24 6:21pm)</pre>
+    </div>
+   <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 799108</pre>
+    <pre>Date       : 1-5-24    6:18 pm</pre>
+    <pre>Package    : 505 Diamond</pre>
+    <pre>Price      : 305 BDT</pre>
+    <Pre>Player Id  : 6428690107</Pre>
+    <pre>Status     : <span id="com">Complete</span> (1-5-24 6:21pm)</pre>
+    </div>
+   <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 770274</pre>
+    <pre>Date       : 12-3-24    10:50 pm</pre>
+    <pre>Package    : 610 Diamond</pre>
+    <pre>Price      : 360 BDT</pre>
+    <Pre>Player Id  : 4916857339</Pre>
+    <pre>Status     : <span id="com">Complete</span> (12-3-24 10:52pm)</pre>
+    </div>
+  <!--  <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 710946</pre>
+    <pre>Date       : 25-11-23    7:12 pm</pre>
+    <pre>Package    : Weekly Pass</pre>
+    <pre>Price      : </pre>
+    <Pre>Unipin     : </Pre>
+    <pre>Status     : <span id="com">Complete</span> (25-11-23 7:13pm)</pre>
+    </div> -->
+  <div class="container orbox">
+    <h1>My Order</h1><hr>
+    <pre>Order Id   : 609758</pre>
+    <pre>Date       : 25-11-23    7:12 pm</pre>
+    <pre>Package    : Monthly Pass</pre>
+    <pre>Price      : 650 BDT</pre>
+    <Pre>Player Id  : 5648036137</Pre>
+    <pre>Status     : <span id="com">Complete</span> (25-11-23 7:13pm)</pre>
+    </div>
+      <div class="order">
+        <a href="index.html"><button>অর্ডার করুন</button></a>
+      </div>
+    <script>
+        // Check if the customer ID is already stored in localStorage
+        let customerID = localStorage.getItem('customerID');
+
+        // If it doesn't exist, generate a random ID and store it
+        if (!customerID) {
+            customerID = generateRandomID();
+            localStorage.setItem('customerID', customerID);
+        }
+
+        // Display the customer ID on the web page
+        document.getElementById('customerID').textContent = customerID;
+
+        // Function to generate a random customer ID
+        function generateRandomID() {
+            // You can use any desired method to generate a unique ID, like a UUID library
+            // For simplicity, we'll use a random 6-digit number
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Nagad Payment</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ .im{
+   text-align: center;
+ }
+  .rules{
+   border: 2px solid cornflowerblue;
+   margin-top: 50px;
+   margin-right: 50px;
+   margin-left: 50px;
+   border-radius: 10px;
+ }
+  #rl{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+  }
+ .rules ul{
+    margin-left: 50px;
+ }
+ .rlb{
+   text-align: center;
+ }
+ .rlb button{
+   height: 100px;
+   width: 350px;
+   font-size: 3rem;
+   background-color: red;
+   border-radius: 10px;
+   margin-top : 50px;
+   margin-bottom: 200px;
+ }
+  ul li {
+  font-size: 45px; /* Change this value to set the desired font size */
+}
+  li a{
+  color: gold;
+}
+  #copyButton{
+    height: 50px;
+    width: 150px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+    background-color: gray;
+  }
+  .alt p{
+   font-size: 3rem;
+   color: red;
+ }
+ #cod{
+   display: none;
+ }
+  </style>
+</head>
+<body>
+  <div class="im">
+    <img id="nagad" src="https://www.himublog.com/wp-content/uploads/2021/06/nagad.jpg" alt="Nagad Image" class="large-image">
+  </div>
+  <div class="pay">
+            <p id="tran">ট্রান্সজেকশন আইডি দিন</p>
+          <input id="re2" type="text" placeholder="ট্রান্সজেকশন আইডি দিন" required>
+          <div class="list">
+            <ul>
+            <li>*167# ডায়াল করে আপনার NAGAD মোবাইল মেনুতে যান অথবা NAGAD অ্যাপে যান।</li>
+            <li><a class="clr">"Send Money"</a> -এ ক্লিক করুন।</li>
+              <li>প্রাপক নম্বর হিসেবে এই নম্বরটি লিখুনঃ <a class="clr">01743581539</a> <button id="copyButton">Copy</button></li>
+              <li>নির্দিষ্ট পরিমানের টাকা সেন্ডমানি করুন।</li>
+              <li>নিশ্চিত করতে এখন আপনার NAGAD মোবাইল মেনু পিন লিখুন।</li>
+              <li>সবকিছু ঠিক থাকলে, আপনি NAGAD থেকে একটি নিশ্চিতকরণ বার্তা পাবেন।</li>
+              <li id="lasli">এখন উপরের বক্সে আপনার Transaction ID দিন এবং নিচের VERIFY বাটনে ক্লিক করুন।</li>
+          </ul>
+          </div>
+          </div>
+        <div class="bt">
+          <div class="alt">
+            <p id="cod">Transaction ID required</p>
+          </div>
+          <b><button id="vy">VERIFY</button></b>
+        </div>
+  </div>
+<div class="tid">
+    <p>সেন্ডমানি করার পর ট্রান্সজেকশন আইডি কোথায় লেখা থাকে তা ছবিতে দেখানো হলো।</p>
+    <img src="https://drive.google.com/uc?id=19IQqJICkkZqaCbuC0SncCuetsDcjPv_5" alt="Your Image Description">
+    <p>অথবা</p>
+    <img src="https://drive.google.com/uc?id=1A2DKSsHHS-o6eoJvzj8zY7569-eTnsXU" alt="Your Image Description">
+  </div>
+  <div class="rules">
+    <p id="rl">#Rules & Conditions</p>
+    <ul>
+      <li>
+        Order করার ৫ মিনিটের মধ্যে Diamond / UC পেয়ে যাবেন।
+      </li>
+      <li>
+        Player ID Code ভুল দিয়ে Diamond / UC না পেলে G shop কর্তৃপক্ষ দায়ী নয়।
+      </li>
+      <li>
+        Order কমপ্লিট হওয়ার পরেও আইডিতে Diamond / UC না গেলে Support মেসেজ দিন।
+      </li>
+    </ul>
+  </div>
+  <div class="rlb">
+    <a href="https://wa.me/+8801891707400"><button>Support</button></a>
+  </div>
+<script>
+  document.getElementById('vy').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Check if the transaction ID input is filled
+    var transactionIdInput = document.getElementById('re2');
+    var codElement = document.getElementById('cod');
+    
+    if (transactionIdInput.value.trim() === '') {
+      // Display the 'p' tag with the 'cod' id
+      codElement.style.display = 'block';
+    } else {
+      // Hide the 'p' tag with the 'cod' id
+      codElement.style.display = 'none';
+      // Proceed to the new page if the input is filled
+      window.location.href = 'thank.html';
+    }
+  });
+  // Get the button element
+    var copyButton = document.getElementById('copyButton');
+
+    // Add a click event listener to the button
+    copyButton.addEventListener('click', function() {
+      // Create a temporary input element
+      var tempInput = document.createElement('input');
+      
+      // Set the input value to the phone number
+      tempInput.value = '01743581539';
+
+      // Append the input element to the body (you can hide it with CSS)
+      document.body.appendChild(tempInput);
+
+      // Select the input text
+      tempInput.select();
+      tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the selected text to the clipboard
+      document.execCommand('copy');
+
+      // Remove the temporary input element
+      document.body.removeChild(tempInput);
+    });
+</script>
+
+</body>
+</html>

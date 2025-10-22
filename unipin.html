@@ -1,0 +1,167 @@
+<!DOCTYPE html>  
+  <html>  
+  <head>  
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">  
+    <link rel="stylesheet" href="uni.css"/>  
+    <title>Unipin FF</title>  
+    <style>
+    #rdm{
+  margin-left: 0px;
+  font-size: 50px;
+  margin: 20px 20px 20px 20px;
+  background-color: red;
+  border-radius: 18px;
+  padding: 10px;
+}
+    </style>
+  </head>  
+  <body>  
+    <img id="dlogo" src="https://cdn.unipin.com/images/content_image_pages/1596522371-MA-200709-1_UniPin_SEO_banner_FF.jpg" alt="Description of the image"> 
+    <header> 
+      <a href="https://shop.garena.my/app"><button id="rdm">Redeem Code</button></a>
+      <div class="mainhead">  
+        <div class="slre">  
+          <div class="one">  
+            <p>1</p>  
+          </div>  
+          <div class="slmet">  
+            <p>Select Recharge</p>  
+          </div>  
+        </div>  
+    </header>  
+      <div class="amountli">  
+        <div class="amount">  
+          <div class="amountp"><input type="radio" name="amount" id="amount1" value="Option 1" disabled> <label for="amount1"><div class="price"><p class="firp">115 Diamond Voucher <p class="dis">Stock Out</p></p>  
+            <p class="secp">BDT 65</p></div>  
+          </label></div>  
+          <div class="amountp"><input type="radio" name="amount" id="amount2" value="Option 2"> <label for="amount2"><div class="price"><p class="firp">240 Diamond Voucher</p>  
+            <p class="secp">BDT 134</p></div>  
+          </label></div>  
+      </div>  
+        <div class="amount">  
+          <div class="amountp"><input type="radio" name="amount" id="amount5" value="Option 5"> <label for="amount5"><div class="price"><p class="firp">610 Diamond Voucher</p>  
+            <p class="secp">BDT 359</p></div>  
+          </label></div>  
+      </div>  
+        <div class="amount">  
+          <div class="amountp"><input type="radio" name="amount" id="amount8" value="Option 8"> <label for="amount8"><div class="price"><p class="firp">1240 Diamond Voucher</p>  
+            <p class="secp">BDT 730</p></div>  
+          </label></div>  
+      </div>  
+        <div class="amount">  
+          <div class="amountp"><input type="radio" name="amount" id="amount10" value="Option 10"> <label for="amount10"><div class="price"><p class="firp">2530 Diamond Voucher</p>  
+            <p class="secp">BDT 1450</p></div>  
+          </label></div>  
+      </div>   
+        <div class="amount">  
+          <div class="amountp"><input type="radio" name="amount" id="amount14" value="Option 14"> <label for="amount14"><div class="price"><p class="firp">Level Up Pass Voucher</p>  
+            <p class="secp">BDT 134</p></div>  
+          </label></div>  
+      </div>  
+        <div class="amount">  
+          <div class="amountp"><input type="radio" name="amount" id="amount15" value="Option 15"> <label for="amount15"><div class="price"><p class="firp"><br>Weekly Voucher</p>  
+            <p class="secp">BDT 132</p></div>  
+          </label></div>  
+          <div class="amountp"><input type="radio" name="amount" id="amount16" value="Option 16"> <label for="amount16"><div class="price"><p class="firp"><br>Monthly Voucher</p>  
+            <p class="secp">BDT 660</p></div>  
+          </label></div>  
+      </div>  
+      </div>  
+      <footer class="cng">  
+        <div class="slre">  
+        </footer>  
+        <div class="tracod">  
+          <div class="slre">  
+          <div class="one">  
+            <p>2</p>  
+          </div>  
+          <div class="slmet">  
+            <p>Payment Methods</p><br>  
+            <div class="logo2">  
+              <label><input type="radio" name="payment" id="b" value="bk"><img id="bkash" src="https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg" alt="bKash Logo" width="300px" height="auto">  
+              </label>  
+              <label><input type="radio" name="payment" id="n" value="ng"><img id="nagad" src="https://www.himublog.com/wp-content/uploads/2021/06/nagad.jpg" alt="Nagad Image" class="large-image">  
+              </label>  
+            </div>  
+          </div>  
+        </div>  
+          <div class="alt">  
+            <p id="rec">Select recharge</p>  
+            <p id="uid">UID required</p>  
+            <p id="pmnt">Select payment method</p>  
+          </div>  
+            <div class="bt">  
+              <button id="continue">Buy Now</button>  
+            </div>  
+  <footer>  
+      <div class="footer-content">  
+          <div class="footer-logo">  
+          </div>  
+          <div class="footer-info">  
+              <h4>Contact Us</h4>  
+              <p>Email: sh0174358@gmail.com</p>  
+          </div>  
+          <div class="footer-social">  
+              <h4>Stay Connected</h4>  
+            <p>Open 24 hours</p>  
+          </div>  
+      </div>  
+      <div class="footer-bottom">  
+          &copy; 2023 Gshop. All rights reserved.  
+      </div>  
+  </footer>  
+        <script>
+          document.getElementById('rec').style.display = 'none';
+document.getElementById('uid').style.display = 'none';
+document.getElementById('pmnt').style.display = 'none';
+
+document.getElementById('continue').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Hide all the <p> tags under the 'alt' div
+    document.getElementById('rec').style.display = 'none';
+    document.getElementById('uid').style.display = 'none';
+    document.getElementById('pmnt').style.display = 'none';
+
+    // Check if an amount option is selected in the 'amount' section
+    var amountInputs = document.querySelectorAll('input[name="amount"]');
+    var amountSelected = false;
+    for (var i = 0; i < amountInputs.length; i++) {
+      if (amountInputs[i].checked) {
+        amountSelected = true;
+        break;
+      }
+    }
+
+    // Check if a payment method is selected in the 'logo2' section
+    var paymentInputs = document.querySelectorAll('input[name="payment"]');
+    var paymentSelected = false;
+    var selectedPaymentValue = null;
+    for (var i = 0; i < paymentInputs.length; i++) {
+      if (paymentInputs[i].checked) {
+        paymentSelected = true;
+        selectedPaymentValue = paymentInputs[i].value;
+        break;
+      }
+    }
+
+    // Check if the player ID (UID) is filled
+    // Display different alerts based on the section that is not selected
+    if (!amountSelected) {
+      document.getElementById('rec').style.display = 'block';
+    } else if (!paymentSelected) {
+      document.getElementById('pmnt').style.display = 'block';
+    } else {
+      // Proceed to the next step if both conditions are met
+      if (selectedPaymentValue === 'bk') {
+        window.open('Bkash-pay.html', '_blank');
+      } else if (selectedPaymentValue === 'ng') {
+        window.open('Nagad-pay.html', '_blank');
+      } else {
+        alert('Invalid payment selection');
+      }
+    }
+  });
+          </script>  
+  </body>  
+  </html>

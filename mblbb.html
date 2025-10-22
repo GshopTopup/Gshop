@@ -1,0 +1,199 @@
+<!DOCTYPE html>   
+   <html>   
+   <head>   
+     <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">   
+     <link rel="stylesheet" href="style.css"/>   
+     <title>Mobile Legends</title>
+     <style>
+     #z{
+       margin-top: 50px;
+       width: 750px;
+       text-align: center;
+       height: 100px;
+       margin-bottom: 30px;
+       border: 2px solid blue;
+     }
+     #zn{
+       display: none;
+     }
+     </style>
+   </head>   
+   <body>   
+     <img id="dlogo" src="https://drive.google.com/uc?id=1EXUxzbYsf7v0YA68GCu_hls8i9K8Z-Cp" alt="Image Description">
+     <header>   
+       <div class="mainhead">   
+         <div class="slre">   
+           <div class="one">   
+             <p>R</p>   
+           </div>   
+           <div class="slmet">   
+             <p>Select Recharge</p>   
+           </div>   
+         </div>   
+     </header>   
+       <div class="amountli">   
+         <div class="amount">   
+           <div class="amountp"><input type="radio" name="amount" id="amount1" value="Option 1"> <label for="amount1"><div class="price"><p class="firp">42 Diamonds</p>   
+             <p class="secp">BDT 80</p></div>   
+           </label></div>   
+           <div class="amountp"><input type="radio" name="amount" id="amount2" value="Option 2"> <label for="amount2"><div class="price"><p class="firp">70 Diamonds</p>   
+             <p class="secp">BDT 135</p></div>   
+           </label></div>   
+       </div>   
+       <div class="amount">   
+           <div class="amountp"><input type="radio" name="amount" id="amount3" value="Option 3"> <label for="amount3"><div class="price"><p class="firp">140 Diamonds</p>   
+             <p class="secp">BDT 270</p></div>   
+           </label></div>   
+           <div class="amountp"><input type="radio" name="amount" id="amount4" value="Option 4"> <label for="amount4"><div class="price"><p class="firp">284 Diamonds</p>   
+             <p class="secp">BDT 565</p></div>   
+           </label></div>   
+       </div>   
+         <div class="amount">   
+           <div class="amountp"><input type="radio" name="amount" id="amount5" value="Option 5"> <label for="amount5"><div class="price"><p class="firp">355 Diamonds</p>   
+             <p class="secp">BDT 725</p></div>   
+           </label></div>   
+       </div>   
+         <div class="amount">   
+           <div class="amountp"><input type="radio" name="amount" id="amount8" value="Option 8"> <label for="amount8"><div class="price"><p class="firp">429 Diamonds</p>   
+             <p class="secp">BDT 845</p></div>   
+           </label></div>   
+       </div>   
+         <div class="amount">   
+           <div class="amountp"><input type="radio" name="amount" id="amount10" value="Option 10"> <label for="amount10"><div class="price"><p class="firp">716 Diamonds</p>   
+             <p class="secp">BDT 1445</p></div>   
+           </label></div>   
+       </div>    
+         <div class="amount">   
+           <div class="amountp"><input type="radio" name="amount" id="amount14" value="Option 14"> <label for="amount14"><div class="price"><p class="firp">1084 Diamonds</p>   
+             <p class="secp">BDT 2195</p></div>   
+           </label></div>   
+       </div>   
+         <div class="amount">   
+           <div class="amountp"><input type="radio" name="amount" id="amount15" value="Option 15"> <label for="amount15"><div class="price"><p class="firp"><br>Twilight</p>   
+             <p class="secp">BDT 1105</p></div>   
+           </label></div>   
+       </div>   
+       </div>   
+       <footer class="cng">   
+         <div class="slre">   
+           <div class="one">   
+             <p>I</p>   
+           </div>   
+           <div class="slmet">   
+             <p>Account Info</p>   
+             <hr>   
+             <input id='in' type="number" placeholder="Player ID (UID)"required>   
+             <input id='z' type="text" placeholder="Zone ID"required>
+           </div>   
+         </footer>   
+         <div class="tracod">   
+           <div class="slre">   
+           <div class="one">   
+             <p>P</p>   
+           </div>   
+           <div class="slmet">   
+             <p>Payment Methods</p><br>   
+             <div class="logo2">   
+               <label><input type="radio" name="payment" id="b" value="bk"><img id="bkash" src="https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg" alt="bKash Logo" width="300px" height="auto">   
+               </label>   
+               <label><input type="radio" name="payment" id="n" value="ng"><img id="nagad" src="https://www.himublog.com/wp-content/uploads/2021/06/nagad.jpg" alt="Nagad Image" class="large-image">   
+               </label>   
+             </div>   
+           </div>   
+         </div>   
+           <div class="alt">   
+             <p id="rec">Select recharge</p>   
+             <p id="uid">UID required</p>   
+             <p id="pmnt">Select payment method</p>   
+             <p id="zn">Zone ID required</p>
+           </div>   
+             <div class="bt">   
+               <button id="continue">Buy Now</button>
+             </div>   
+   <footer>   
+       <div class="footer-content">   
+           <div class="footer-logo">   
+           </div>   
+           <div class="footer-info">   
+               <h4>Contact Us</h4>   
+               <p>Email: sh0174358@gmail.com</p>   
+           </div>   
+           <div class="footer-social">   
+               <h4>Stay Connected</h4>   
+             <p>Open 24 hours</p>   
+           </div>   
+       </div>   
+       <div class="footer-bottom">   
+           &copy; 2023 Gshop. All rights reserved.   
+       </div>   
+   </footer>   
+        <script>
+document.getElementById('rec').style.display = 'none';
+document.getElementById('uid').style.display = 'none';
+document.getElementById('pmnt').style.display = 'none';
+document.getElementById('zn').style.display = 'none'; // Add this line to hide 'zn' initially
+
+document.getElementById('continue').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Hide all the <p> tags under the 'alt' div
+    document.getElementById('rec').style.display = 'none';
+    document.getElementById('uid').style.display = 'none';
+    document.getElementById('pmnt').style.display = 'none';
+    document.getElementById('zn').style.display = 'none'; // Hide 'zn' on button click
+
+    // Check if 'z' input is filled
+    var zoneInput = document.getElementById('z');
+    if (zoneInput.value.trim() === '') {
+      document.getElementById('zn').style.display = 'block'; // Display 'zn' if 'z' is not filled
+      return;
+    }
+
+    // Check if an amount option is selected in the 'amount' section
+    var amountInputs = document.querySelectorAll('input[name="amount"]');
+    var amountSelected = false;
+    for (var i = 0; i < amountInputs.length; i++) {
+      if (amountInputs[i].checked) {
+        amountSelected = true;
+        break;
+      }
+    }
+
+    // Check if a payment method is selected in the 'logo2' section
+    var paymentInputs = document.querySelectorAll('input[name="payment"]');
+    var paymentSelected = false;
+    var selectedPaymentValue = null;
+    for (var i = 0; i < paymentInputs.length; i++) {
+      if (paymentInputs[i].checked) {
+        paymentSelected = true;
+        selectedPaymentValue = paymentInputs[i].value;
+        break;
+      }
+    }
+
+    // Check if the player ID (UID) is filled
+    var playerIdInput = document.getElementById('in');
+    if (playerIdInput.value.trim() === '') {
+      document.getElementById('uid').style.display = 'block';
+      return;
+    }
+
+    // Display different alerts based on the section that is not selected
+    if (!amountSelected) {
+      document.getElementById('rec').style.display = 'block';
+    } else if (!paymentSelected) {
+      document.getElementById('pmnt').style.display = 'block';
+    } else {
+      // Proceed to the next step if both conditions are met
+      if (selectedPaymentValue === 'bk') {
+        window.open('Bkash-pay.html', '_blank');
+      } else if (selectedPaymentValue === 'ng') {
+        window.open('Nagad-pay.html', '_blank');
+      } else {
+        alert('Invalid payment selection');
+      }
+    }
+  });
+</script>
+   </body>   
+   </html>

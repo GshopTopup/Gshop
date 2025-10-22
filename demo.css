@@ -1,0 +1,52 @@
+p{
+  display: flex;
+}
+#cen{
+  text-align: center;
+}
+.order{
+  text-align: center;
+}
+h3{
+    font-size: 4rem;
+    color: green;
+  }
+  p{
+    font-size: 3rem;
+  }
+ .order{
+   text-align: center;
+   color: green;
+ }
+ .orbox{
+   border: 2px solid blue;
+   color: black;
+ }
+  a{
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  button{
+    height: 100px;
+    width: 250px;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+h1{
+  font-size: 3.5rem;
+  margin-left: 15px;
+}
+#yo{
+  text-decoration: underline;
+}
+pre{
+  font-size: 2.5rem;
+  margin-left: 15px;
+  font-weight: bold;
+}
+#com{
+  color: deeppink;
+}
